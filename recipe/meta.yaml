@@ -11,15 +11,14 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
-    
+  script: {{ PYTHON }} -m pip install . -vv
 requirements:
   build:
     - {{ compiler('c') }}
   host:
     - python
     - pip
-    - numpy 
+    - numpy
     - cython
   run:
     - python
@@ -29,19 +28,19 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - scikit-learn
     - scipy >=1.2.1
-    
+
 test:
   imports:
-   - fABBA
+    - fABBA
   requires:
-   - pip
+    - pip
   commands:
-   - pip check
-   
+    - pip check
+
 
 about:
   home: https://github.com/nla-group/fABBA
-  summary: 'An efficient aggregation method for the symbolic representation of temporal data.'
+  summary: An efficient aggregation method for the symbolic representation of temporal data.
   license: BSD-3-Clause
   license_file: LICENSE
   dev_url: https://github.com/nla-group/fABBA
