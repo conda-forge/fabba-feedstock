@@ -1,7 +1,7 @@
 # test the basic functions and load the related packages
 import pickle
 import numpy as np
-from fABBA import fabba_model
+from fABBA import fABBA
 from fABBA.load_datasets import load_synthetic_sample
 
 samples = []
