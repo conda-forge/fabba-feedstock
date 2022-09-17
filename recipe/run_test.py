@@ -14,7 +14,7 @@ for length in np.arange(1000, 3001, 1000, dtype=int):
     samples.append(ts3)
 
 for i in range(len(samples)):
-    fabba = fabba_model(tol=0.1, alpha=0.1, sorting='2-norm', scl=1, verbose=0)
+    fabba = fABBA(tol=0.1, alpha=0.1, sorting='2-norm', scl=1, verbose=0)
     string = fabba.fit_transform(samples[i])
     inverse_ts = fabba.inverse_transform(string, samples[i][0])
 
