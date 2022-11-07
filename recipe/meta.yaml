@@ -10,7 +10,7 @@ source:
   sha256: e6497b7d759082c9737a0a590a1f9e3c6acaac60d520a11707cd791bea82338c
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 requirements:
   build:
@@ -37,7 +37,6 @@ test:
   commands:
     - pip check
 
-
 about:
   home: https://github.com/nla-group/fABBA
   summary: An efficient aggregation method for the symbolic representation of temporal data.
@@ -49,4 +48,3 @@ extra:
   recipe-maintainers:
     - guettel
     - chenxinye
-
