@@ -37,7 +37,6 @@ test:
   commands:
     - pip check
 
-
 about:
   home: https://github.com/nla-group/fABBA
   summary: An efficient aggregation method for the symbolic representation of temporal data.
@@ -49,4 +48,3 @@ extra:
   recipe-maintainers:
     - guettel
     - chenxinye
-
