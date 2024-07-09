@@ -1,5 +1,5 @@
 {% set name = "fABBA" %}
-{% set version = "1.2.6" %}
+{% set version = "1.2.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7a663d91b99e7863c1c87bd638d61ef266ecabbd0b659efc3325bc0e82a75f61
+  sha256: ce9d9e04a84a4f8e28c50d6a667ffe107c50db1399dbb1e7d945e61c965ef2ec
 
 build:
   number: 0
